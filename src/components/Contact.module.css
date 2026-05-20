@@ -1,0 +1,133 @@
+.contactGrid {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.contactInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contactInfoItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #fff;
+  padding: 20px 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s;
+}
+
+.contactInfoItem:hover {
+  transform: translateX(6px);
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  background: #fceae0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.contactInfoItem h4 {
+  font-size: 0.95rem;
+  color: #888;
+  font-weight: 500;
+}
+
+.contactInfoItem span {
+  font-size: 1.05rem;
+  color: #2c2c2c;
+  font-weight: 600;
+}
+
+.contactForm {
+  flex: 1.2;
+  background: #fff;
+  padding: 36px 32px;
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+}
+
+.contactForm h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-bottom: 24px;
+}
+
+.formGroup {
+  margin-bottom: 16px;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid #f0ece8;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  color: #333;
+  background: #fdfaf7;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-family: inherit;
+  outline: none;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  border-color: #e8935a;
+  box-shadow: 0 0 0 3px rgba(232, 147, 90, 0.1);
+}
+
+.formGroup textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.formGroup select {
+  color: #888;
+  cursor: pointer;
+}
+
+.formGroup select option {
+  color: #333;
+}
+
+.formGroup input[type="date"] {
+  color: #888;
+}
+
+.submitBtn {
+  width: 100%;
+  font-size: 1.05rem !important;
+}
+
+@media (max-width: 768px) {
+  .contactGrid {
+    flex-direction: column;
+  }
+}
+
+
+.mapContainer {
+  margin-top: 16px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.mapContainer iframe {
+  display: block;
+}

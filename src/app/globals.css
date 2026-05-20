@@ -1,0 +1,90 @@
+/* ===== 全局重置 & 通用样式 ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: ''Segoe UI'', ''PingFang SC'', ''Microsoft YaHei'', sans-serif;
+  color: #333;
+  background: #fdfaf7;
+  line-height: 1.6;
+}
+
+/* ===== 通用区块 ===== */
+.section {
+  padding: 100px 24px;
+}
+
+.section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-label {
+  display: inline-block;
+  color: #e8935a;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2c2c2c;
+  margin-bottom: 16px;
+}
+
+.section-desc {
+  color: #777;
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+/* ===== 通用按钮 ===== */
+.btn-primary {
+  background: linear-gradient(135deg, #e8935a, #d4726a);
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(232, 147, 90, 0.4);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #e8935a;
+  border: 2px solid #e8935a;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-outline:hover {
+  background: #e8935a;
+  color: #fff;
+}

@@ -1,0 +1,56 @@
+.services {
+  background: #fff;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.serviceCard {
+  background: #fdfaf7;
+  border-radius: 20px;
+  padding: 36px 28px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: default;
+}
+
+.serviceCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(232, 147, 90, 0.15);
+}
+
+.serviceIcon {
+  font-size: 2.8rem;
+  margin-bottom: 18px;
+}
+
+.serviceCard h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-bottom: 10px;
+}
+
+.serviceCard p {
+  color: #777;
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+.serviceTag {
+  display: inline-block;
+  background: linear-gradient(135deg, #e8935a, #d4726a);
+  color: #fff;
+  padding: 4px 14px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .servicesGrid {
+    grid-template-columns: 1fr;
+  }
+}
